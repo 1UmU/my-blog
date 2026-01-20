@@ -16,8 +16,7 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://blog.voqz.de",
 
 	// 站点描述
-	description:
-		"这里是 UmU 的个人博客，记录技术笔记、折腾过程与生活随想。",
+	description: "这里是 UmU 的个人博客，记录技术笔记、折腾过程与生活随想。",
 
 	// 站点关键词
 	keywords: [
@@ -148,7 +147,5 @@ export const siteConfig: SiteConfig = {
 	// 字体配置
 	// 在src/config/fontConfig.ts中配置具体字体
 	font: fontConfig,
-
-	
-
+	lang: "zh_CN"
 };

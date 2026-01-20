@@ -86,9 +86,9 @@ const jsonLd = {
 		url: Astro.site,
 	},
 	datePublished: formatDateToYYYYMMDD(entry.data.published),
-	inLanguage: entry.data.lang
+	inLanguage: (entry.data.lang && entry.data.lang.trim() !== "")
 		? entry.data.lang.replace("_", "-")
-		: siteConfig.lang.replace("_", "-"),
+		: (siteConfig.lang || "en").replace("_", "-"),
 	// TODO include cover image here
 };
 ---
@@ -322,7 +322,7 @@ const jsonLd = {
                   <div class="text-[1.0rem] leading-tight text-black/75 dark:text-white/75">
                     {`${i18n(I18nKey.lastModifiedPrefix)}${dateStr}${
                       isOutdated
-                        ? `，${i18n(I18nKey.lastModifiedDaysAgo).replace("{days}", daysDiff.toString())}`
+                        ? `，${(i18n(I18nKey.lastModifiedDaysAgo) || "{days}").replace("{days}", daysDiff.toString())}`
                         : ""
                     }`}
                   </div>
