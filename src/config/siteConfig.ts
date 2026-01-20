@@ -149,6 +149,6 @@ export const siteConfig: SiteConfig = {
 	// 在src/config/fontConfig.ts中配置具体字体
 	font: fontConfig,
 
-	lang: "zh_CN",
+	
 
 };
