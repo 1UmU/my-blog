@@ -56,8 +56,8 @@ if (processedImage) {
 		processedImage.startsWith("https") ||
 		processedImage.startsWith("data:")
 	);
-	if (isLocal) {
-		const basePath = getFileDirFromPath(entry.filePath || "");
+	if (isLocal && entry.filePath) {
+		const basePath = getFileDirFromPath(entry.filePath);
 		const files = import.meta.glob<ImageMetadata>("../../**", {
 			import: "default",
 		});
