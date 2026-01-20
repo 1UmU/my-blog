@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>UmU</title><description>记录技术 · 随笔 · 生活</description><link>https://blog.voqz.de/</link><templateTheme>Firefly</templateTheme><templateThemeVersion>6.3.8</templateThemeVersion><templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl><lastBuildDate>2026年1月20日 14:08:55</lastBuildDate><item><title>重温《星际穿越》：爱是唯一可以穿越时间与空间的事物</title><link>https://blog.voqz.de/posts/movie-review-interstellar/</link><guid isPermaLink="true">https://blog.voqz.de/posts/movie-review-interstellar/</guid><description>再次重温诺兰的这部神作，依然被深深震撼。不仅仅是因为硬核的科幻设定，更是因为其中蕴含的人性光辉。</description><pubDate>Sun, 18 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;昨晚闲来无事，又把《星际穿越》(Interstellar) 翻出来看了一遍。距离这部电影上映已经过去了十几年，但它依然是我心目中最好的科幻电影之一。&lt;/p&gt;
+&lt;section&gt;&lt;h2&gt;汉斯·季默的配乐&lt;a href=&quot;#汉斯季默的配乐&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;不得不提 Hans Zimmer 的配乐。管风琴的声音响起时，那种宏大、孤独、神圣的感觉瞬间将人包裹。特别是在 “Docking Scene”（对接）那一段，紧张的旋转镜头配合层层递进的音乐，让人屏住呼吸。&lt;/p&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;关于爱&lt;a href=&quot;#关于爱&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;&lt;p&gt;“Love is the one thing that transcends time and space.”&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;布兰德博士的这句话，初看时觉得有点“神棍”，但在故事的结尾，当库珀在五维空间里通过引力波与女儿交流时，才明白这才是整部电影的核心。&lt;/p&gt;&lt;p&gt;科幻只是外衣，内核依然是人与人之间的羁绊。墨菲定律并不是说坏事一定会发生，而是说“只要��可能发生的事，就一定会发生”。&lt;/p&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;结语&lt;a href=&quot;#结语&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;在这个快节奏的时代，能静下心来花三个小时沉浸在一部电影里，本身就是一种奢侈。如果你还没看过，或者很久没看了，强烈推荐找个周末重温一下。&lt;/p&gt;&lt;/section&gt;</content:encoded></item><item><title>浅析现阶段 AI 的发展与趋势</title><link>https://blog.voqz.de/posts/ai-development-trend/</link><guid isPermaLink="true">https://blog.voqz.de/posts/ai-development-trend/</guid><description>从大语言模型的爆发到多模态的融合，AI 正在以惊人的速度重塑我们的世界。</description><pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;AI 发展的黄金时代&lt;a href=&quot;#ai-发展的黄金时代&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;进入 2026 年，回望过去几年，人工智能（AI）的发展速度令人咋舌。从最初 ChatGPT 的惊艳亮相，到如今各类垂直领域模型的百花���放，我们正身处一个技术大爆炸的时代。&lt;/p&gt;&lt;section&gt;&lt;h2&gt;大语言模型 (LLM) 的进化&lt;a href=&quot;#大语言模型-llm-的进化&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;大语言模型依然是 AI 领域的核心。现在的模型不仅在参数量上继续攀升，更重要的是在&lt;strong&gt;推理能力&lt;/strong&gt;和&lt;strong&gt;长上下文窗口&lt;/strong&gt;上取得了突破。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;更强的逻辑推理&lt;/strong&gt;：AI 不再只是简单的文字接龙，它开始具备处理复杂逻辑链条的能力，能够辅助科研人员进行假设验证，甚至编写复杂的代码系统。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多模态融合&lt;/strong&gt;：现在的模型基本都具备了“看、听、说”的能力。文字、图像、音频、视频之间的界限被打破，我们可以用一段文字生成一部短片，或者直接用语音让 AI 修改设计图。&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;AI 赋能编程：开发者的第二大脑&lt;a href=&quot;#ai-赋能编程开发者的第二大脑&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;对于开发者来说，AI 带来的改变尤为直观。现在写代码，我基本离不开 AI 辅助工具了。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代码生成与补全&lt;/strong&gt;：不再需要去记那些繁琐的 API 调用，只需写下注释或函数名，AI 就能自动补全剩下的代码。它就像一个看过所有开源代码的资深搭档，坐在你旁边随时提供建议。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debug 利器&lt;/strong&gt;：遇到报错不知道怎么修？直接把错误日志丢给 AI，它不仅能分析原因，还能直接给出修复代码。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;重构与优化&lt;/strong&gt;：以前看着像“屎山”一样的旧代码不敢��，现在可以让 AI 帮忙理解逻辑并进行重构，代码质量和可维护性直线上升。&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;可以说，AI 并没有取代程序员，而是让程序员从重复的造轮子中解放出来，去专注于更有创造性的业务逻辑。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;端侧 AI 的普及&lt;a href=&quot;#端侧-ai-的普及&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;以前跑个大模型动不动就要几张 A100 显卡，现在情况变了。随着模型蒸馏技术和硬件 NPU 性能的提升，越来越多的高性能模型可以直接跑在我们的笔记本电脑甚至手机上。&lt;/p&gt;&lt;p&gt;比如我手头的这台电脑，现在就能流畅运行 7B 甚至 13B 参数量的本地模型，处理隐私数据时再也不用担心上传云端的风险了。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;AI Agent (智能体)&lt;a href=&quot;#ai-agent-智能体&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;AI Agent 是另一个热门方向。我们不再满足于只是和 AI 聊天，我们希望 AI 能&lt;strong&gt;帮我们干活&lt;/strong&gt;。&lt;/p&gt;&lt;p&gt;现在的 Agent 可以自主规划任务：&lt;/p&gt;&lt;ol&gt;
+&lt;li&gt;理解你的目标（比如“帮我策划一次日本旅行”）。&lt;/li&gt;
+&lt;li&gt;拆解步骤（查机票、订酒店、排攻略）。&lt;/li&gt;
+&lt;li&gt;调用工具（使用搜索引擎、API 接口）。&lt;/li&gt;
+&lt;li&gt;最终交付结果。&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;结语&lt;a href=&quot;#结语&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;AI 的发展既带来了效率的提升，也带来了挑战。作为普通人，我们或许无法改变浪潮的方向，但我们可以学会冲浪。保持好奇心，拥抱新工具，这可能是应对未来最好的方式。&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>2026 年主流 AI 大模型优缺点横向测评</title><link>https://blog.voqz.de/posts/ai-models-comparison/</link><guid isPermaLink="true">https://blog.voqz.de/posts/ai-models-comparison/</guid><description>GPT-5.2, Claude 4, Gemini 3.0... 或者是国产之光 DeepSeek-V4？谁才是现在的版本答案？</description><pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;时间来到 2026 年，AI 模型的迭代速度非但没有放缓，反而更加疯狂。GPT-5.2 的发布彻底引爆了全行业，而 Anthropic 和 Google 也不甘示弱。今天就来盘点一下目前市面上最强的几款模型。&lt;/p&gt;
+&lt;section&gt;&lt;h2&gt;1. GPT-5.2 (OpenAI)&lt;a href=&quot;#1-gpt-52-openai&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;地位&lt;/strong&gt;：重回王座，通往 AGI 的里程碑。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;实时全模态交互&lt;/strong&gt;：不再是“语音转文字再转语音”，GPT-5.2 是原生的多模态模型。它可以实时看你的摄像头视频，听���的语气，甚至能通过你的微表情判断你是否听懂了。延迟低到几乎感觉不到。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;深度推理 (System 2 Thinking)&lt;/strong&gt;：对于数学难题和复杂逻辑，它会主动“慢思考”，并在草稿纸上一步步推导，准确率相比 GPT-4o 提升了 80%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent 能力&lt;/strong&gt;：它可以熟练操作你的电脑（在授权下），帮你整理文件、发送邮件，就像一个真实的秘书。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;贵&lt;/strong&gt;：API 价格依然感人，虽然推出了 Turbo 版，但满血版的成本还是很高。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“政治正确”&lt;/strong&gt;：安全护栏依然很高，有时候会拒绝回答一些无伤大雅的敏感话题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;2. Claude 4 Opus (Anthropic)&lt;a href=&quot;#2-claude-4-opus-anthropic&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;地位&lt;/strong&gt;：程序员的“外挂”，代码质量的天花板。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;项目级代码构建&lt;/strong&gt;：Claude 3.5 只能写文件，Claude 4 可以接管整个 GitHub Repo。你只需要描述需求，它能自己规划目录结构、写配置文件、安装依赖，并完成核心逻辑。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;超长思考窗口&lt;/strong&gt;：在写长篇小说或剧本时，它的连贯性和人物性格保持得最好，几乎没有“机械感”。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Artifacts 2.0&lt;/strong&gt;：现在的 Artifacts 不仅能预览网页，还能直接运行简单的 Python 脚本和数据可视化图表，甚至能导出为独立的小程序。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多模态稍逊&lt;/strong&gt;：虽然识图能力很强，但在实时视频交互上不如 GPT-5.2 流畅。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;3. Gemini 3.0 Ultra (Google)&lt;a href=&quot;#3-gemini-30-ultra-google&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;地位&lt;/strong&gt;：无限记忆的个人数据中心。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;无限上下文 (Infinite Context)&lt;/strong&gt;：这不是夸张。Gemini 3.0 真正实现了“无限”记忆。你可以把这几年的所有邮件、文档、聊天记录全部丢给它，它能瞬间检索到你 2023 年 5 月提到的一个想法。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Google 生态整合&lt;/strong&gt;：配合 Google Glass 或 Pixel 手机，它能实时通过摄像头识别你看到的物体，并结合你的个人数据给出建议。比如看到一家餐厅，它会说：“这家店你两年前来过，当时觉得太咸了。”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;响应速度&lt;/strong&gt;：处理超大上下文时，首字生成速度 (TTFT) 依然比竞争对手慢一拍。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;4. DeepSeek-V4 (深度求索)&lt;a href=&quot;#4-deepseek-v4-深度求索&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;地位&lt;/strong&gt;：端侧模型的奇迹，性价比之王。&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;端侧运行&lt;/strong&gt;：V4 的蒸馏版本（7B/14B）效果惊人，能在高端手机和笔记本上本地流畅运行，且能力逼近云端大模型。这意味着绝对的隐私安全。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开源生态&lt;/strong&gt;：作为开源界的领军者，DeepSeek 拥有最活跃的社区微调版本，针对医疗、法律、二次元等领域的微调版甚至超���了基座模型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;极低成本&lt;/strong&gt;：云端 API 的价格几乎是 GPT-5.2 的 1/100，真的是“白菜价”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;通用知识广度&lt;/strong&gt;：在一些极其冷门的海外知识点上，依然不如训练数据更庞大的 GPT-5.2。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;
+&lt;section&gt;&lt;h2&gt;总结&lt;a href=&quot;#总结&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;土豪 / 追求极致体验&lt;/strong&gt;：无脑冲 &lt;strong&gt;GPT-5.2&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;资深程序员 / 架构师&lt;/strong&gt;：&lt;strong&gt;Claude 4 Opus&lt;/strong&gt; 是你的最佳搭档。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据囤积癖 / Google 全家桶用户&lt;/strong&gt;：&lt;strong&gt;Gemini 3.0&lt;/strong&gt; 是你的第二大脑。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;注重隐私 / 本地部署 / 预算有限&lt;/strong&gt;：&lt;strong&gt;DeepSeek-V4&lt;/strong&gt; 是不二之选。&lt;/li&gt;
+&lt;/ul&gt;&lt;/section&gt;</content:encoded></item><item><title>2026 我的桌面配置分享</title><link>https://blog.voqz.de/posts/my-workspace-2026/</link><guid isPermaLink="true">https://blog.voqz.de/posts/my-workspace-2026/</guid><description>新的一年，重新整理了我的工作区。极简主义与实用主义的结合。</description><pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;section&gt;&lt;h1&gt;新年新气象&lt;a href=&quot;#新年新气象&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;进入 2026 年，我决定对我的桌面进行一次彻底的改造。过去的一年里，桌面上堆满了各种杂物，严重影响了我的工作效率和心情。&lt;/p&gt;&lt;section&gt;&lt;h2&gt;核心设备&lt;a href=&quot;#核心设备&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;主机&lt;/strong&gt;: DELL G16 笔记本 - 性能强劲的游戏本，兼顾工作与娱乐。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;显示器&lt;/strong&gt;: HKC G24H3MAX - 高刷显示器，打游戏丝般顺滑。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;键盘&lt;/strong&gt;: EV63 - 小巧精致，手感出色。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;鼠标&lt;/strong&gt;: GPW2 (Logitech G Pro X Superlight 2) - 轻量化无线鼠标的标杆，指哪打哪。&lt;/li&gt;
+&lt;/ol&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;氛围组&lt;a href=&quot;#氛围组&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;为了在晚上工作时有一点氛围感，我加装了 ScreenBar 和一条米家的灯带。暖黄色的灯光打在桌面上，确实能让人心静下来。&lt;/p&gt;&lt;/section&gt;&lt;section&gt;&lt;h2&gt;断舍离&lt;a href=&quot;#断舍离&quot;&gt;&lt;span&gt;#&lt;/span&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;这次改造最大的动作其实是“扔东西”。我扔掉了：&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;不再使用的旧数据线（整整一抽屉！）&lt;/li&gt;
+&lt;li&gt;积灰的手办盒子&lt;/li&gt;
+&lt;li&gt;过期的文具&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;现在桌面只保留最常用的东西，看着空旷的桌面，感觉思维都清晰了不少。&lt;/p&gt;&lt;p&gt;希望这个新 Setup 能伴随我度过高效的一年！&lt;/p&gt;&lt;/section&gt;&lt;/section&gt;</content:encoded></item><item><title>Hello World</title><link>https://blog.voqz.de/posts/hello-world/</link><guid isPermaLink="true">https://blog.voqz.de/posts/hello-world/</guid><description>我的第一篇博客文章。</description><pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;你好，世界！&lt;/p&gt;
+&lt;p&gt;这是我的第一篇博客文章。我正在使用 Firefly 主题构建我的个人空间。&lt;/p&gt;
+&lt;p&gt;这里将记录我的技术笔记、生活随想和折腾过程。&lt;/p&gt;
+&lt;p&gt;欢迎常来！&lt;/p&gt;</content:encoded></item></channel></rss>
