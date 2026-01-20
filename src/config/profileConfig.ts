@@ -20,7 +20,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibli",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/132270620",
+			url: "https://space.bilibili.com/1324270620",
 			showName: false,
 		},
 		{
