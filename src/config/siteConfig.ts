@@ -1,10 +1,6 @@
 import type { SiteConfig } from "@/types/config";
 import { fontConfig } from "./fontConfig";
 
-// 定义站点语言
-// 语言代码，例如：'zh_CN', 'zh_TW', 'en', 'ja', 'ru'。
-const SITE_LANG = "zh_CN";
-
 export const siteConfig: SiteConfig = {
 	// 站点标题
 	title: "UmU",
@@ -19,9 +15,7 @@ export const siteConfig: SiteConfig = {
 	description: "这里是 UmU 的个人博客，记录技术笔记、折腾过程与生活随想。",
 
 	// 站点关键词
-	keywords: [
-		"UmU", "博客", "技术", "随笔", "Astro",
-	],
+	keywords: ["UmU", "博客", "技术", "随笔", "Astro"],
 
 	// 主题色
 	themeColor: {
@@ -147,5 +141,5 @@ export const siteConfig: SiteConfig = {
 	// 字体配置
 	// 在src/config/fontConfig.ts中配置具体字体
 	font: fontConfig,
-	lang: "zh_CN"
+	lang: "zh_CN",
 };
