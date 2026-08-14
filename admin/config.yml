@@ -27,7 +27,7 @@ public_folder: /assets/images/posts
 media_libraries:
   default:
     config:
-      max_file_size: 5242880
+      max_file_size: 26214400
       slugify_filename: true
       transformations:
         raster_image:
@@ -49,6 +49,11 @@ asset_collections:
     icon: imagesmode
     media_folder: public/assets/images/site
     public_folder: /assets/images/site
+  - name: music_files
+    label: 音乐文件
+    icon: audio_file
+    media_folder: public/assets/music
+    public_folder: /assets/music
 
 collections:
   - name: posts
@@ -151,6 +156,91 @@ collections:
       - label: 正文
         name: body
         widget: markdown
+
+  - name: music
+    label: 音乐管理
+    icon: library_music
+    files:
+      - name: player
+        label: 播放器与歌单
+        icon: queue_music
+        file: src/config/musicData.json
+        format: json
+        fields:
+          - label: 启用音乐播放器
+            name: enable
+            widget: boolean
+            default: true
+          - label: 自动播放
+            name: autoplay
+            widget: boolean
+            default: false
+            hint: 大多数浏览器会在用户首次操作页面前阻止自动播放
+          - label: 循环方式
+            name: loop
+            widget: select
+            default: all
+            options:
+              - { label: 列表循环, value: all }
+              - { label: 单曲循环, value: one }
+              - { label: 播放一次, value: none }
+          - label: 播放顺序
+            name: order
+            widget: select
+            default: list
+            options:
+              - { label: 顺序播放, value: list }
+              - { label: 随机播放, value: random }
+          - label: 默认音量
+            name: volume
+            widget: number
+            value_type: float
+            min: 0
+            max: 1
+            step: 0.1
+            default: 0.7
+            hint: 0 为静音，1 为最大音量
+          - label: 默认隐藏歌词
+            name: lrcHidden
+            widget: boolean
+            default: true
+          - label: 默认折叠播放列表
+            name: listFolded
+            widget: boolean
+            default: false
+          - label: 歌曲列表
+            label_singular: 歌曲
+            name: playlist
+            widget: list
+            min: 1
+            summary: "{{fields.name}} · {{fields.artist}}"
+            fields:
+              - label: 歌曲名称
+                name: name
+                widget: string
+              - label: 歌手
+                name: artist
+                widget: string
+              - label: 音频文件
+                name: url
+                widget: file
+                choose_url: true
+                accept: "audio/*,.mp3,.ogg,.wav,.m4a,.aac,.flac"
+                media_folder: public/assets/music/tracks
+                public_folder: /assets/music/tracks
+                hint: 推荐 MP3；可上传文件，也可填写可公开访问的音频 URL
+              - label: 封面
+                name: cover
+                widget: image
+                choose_url: true
+                required: false
+                media_folder: public/assets/music/cover
+                public_folder: /assets/music/cover
+              - label: LRC 歌词
+                name: lrc
+                widget: text
+                required: false
+                hint: 可粘贴带时间标记的 LRC 歌词内容
 
   - name: settings
     label: 站点设置
