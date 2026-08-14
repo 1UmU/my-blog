@@ -7,7 +7,10 @@ backend:
 
 site_url: https://blog.voqz.de
 display_url: https://blog.voqz.de
-logo_url: https://blog.voqz.de/assets/images/firefly.png
+app_title: UmU 内容管理
+logo:
+  src: /assets/images/firefly.png
+  show_in_header: true
 publish_mode: simple
 
 output:

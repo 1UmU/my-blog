@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="referrer" content="same-origin" />
+    <meta name="theme-color" content="#147d68" />
     <link rel="icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="/admin/admin.css" />
     <title>UmU 内容后台</title>
   </head>
   <body>
-    <script src="https://unpkg.com/@sveltia/cms@0.189.1/dist/sveltia-cms.js"></script>
+    <header class="admin-bar">
+      <a class="admin-brand" href="/" aria-label="返回博客首页">
+        <img src="/assets/images/firefly.png" alt="" width="34" height="34" />
+        <span class="admin-brand-text">
+          <span class="admin-brand-name">UmU</span>
+          <span class="admin-brand-section">内容管理</span>
+        </span>
+      </a>
+      <nav class="admin-actions" aria-label="后台快捷操作">
+        <span class="admin-source">GitHub 内容源</span>
+        <a class="admin-site-link" href="/" target="_blank" rel="noopener">查看站点</a>
+      </nav>
+    </header>
+    <main id="nc-root" aria-label="内容管理工作区"></main>
+    <noscript>请启用 JavaScript 后使用内容管理后台。</noscript>
+    <script defer src="https://unpkg.com/@sveltia/cms@0.189.1/dist/sveltia-cms.js"></script>
   </body>
 </html>
