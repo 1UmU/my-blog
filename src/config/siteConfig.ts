@@ -1,5 +1,6 @@
 import type { SiteConfig } from "@/types/config";
 import { fontConfig } from "./fontConfig";
+import siteAppearance from "./siteAppearance.json";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
@@ -54,7 +55,7 @@ export const siteConfig: SiteConfig = {
 		// { type: "image", value: "https://example.com/logo.png", alt: "Firefly Logo" }
 		logo: {
 			type: "image",
-			value: "/assets/images/firefly.png",
+			value: siteAppearance.navbarLogo,
 			alt: "🍀",
 		},
 		// 导航栏标题

@@ -1,4 +1,5 @@
 import type { BackgroundWallpaperConfig } from "@/types/config";
+import siteAppearance from "./siteAppearance.json";
 
 export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 壁纸模式："banner" 横幅壁纸，"overlay" 全屏透明，"none" 纯色背景无壁纸
@@ -8,9 +9,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 	// 背景图片配置
 	src: {
 		// 桌面背景图片
-		desktop: "/assets/images/d1.webp",
+		desktop: siteAppearance.desktopWallpaper,
 		// 移动背景图片
-		mobile: "/assets/images/m1.webp",
+		mobile: siteAppearance.mobileWallpaper,
 	},
 	// Banner模式特有配置
 	banner: {

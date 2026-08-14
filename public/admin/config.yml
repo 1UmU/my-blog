@@ -35,6 +35,18 @@ media_libraries:
 editor:
   preview: false
 
+asset_collections:
+  - name: post_images
+    label: 文章图片
+    icon: photo_library
+    media_folder: public/assets/images/posts
+    public_folder: /assets/images/posts
+  - name: site_images
+    label: 站点图片
+    icon: imagesmode
+    media_folder: public/assets/images/site
+    public_folder: /assets/images/site
+
 collections:
   - name: posts
     label: 文章
@@ -84,7 +96,7 @@ collections:
         widget: image
         choose_url: true
         required: false
-        hint: 可上传图片，也可以填写 api 使用随机封面
+        hint: 点击选择或上传图片；填写 api 可使用随机封面
       - label: 标签
         name: tags
         widget: list
@@ -136,6 +148,44 @@ collections:
       - label: 正文
         name: body
         widget: markdown
+
+  - name: settings
+    label: 站点设置
+    icon: settings
+    files:
+      - name: appearance
+        label: 站点外观
+        icon: palette
+        file: src/config/siteAppearance.json
+        format: json
+        media_folder: /public/assets/images/site
+        public_folder: /assets/images/site
+        fields:
+          - label: 个人头像
+            name: avatar
+            widget: image
+            choose_url: true
+            hint: 建议使用正方形图片
+          - label: 导航栏 Logo
+            name: navbarLogo
+            widget: image
+            choose_url: true
+            hint: 建议使用透明背景的正方形图片
+          - label: 桌面背景图
+            name: desktopWallpaper
+            widget: image
+            choose_url: true
+            hint: 建议使用横向大图
+          - label: 手机背景图
+            name: mobileWallpaper
+            widget: image
+            choose_url: true
+            hint: 建议使用竖向大图
+          - label: 默认文章封面
+            name: defaultPostCover
+            widget: image
+            choose_url: true
+            hint: 随机封面加载失败时使用
 
   - name: pages
     label: 独立页面

@@ -1,8 +1,9 @@
 import type { ProfileConfig } from "../types/config";
+import siteAppearance from "./siteAppearance.json";
 
 export const profileConfig: ProfileConfig = {
 	// 头像
-	avatar: "/assets/images/avatar.webp",
+	avatar: siteAppearance.avatar,
 
 	// 名字
 	name: "UmU",

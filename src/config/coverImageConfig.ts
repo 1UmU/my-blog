@@ -1,4 +1,5 @@
 import type { CoverImageConfig } from "../types/config";
+import siteAppearance from "./siteAppearance.json";
 
 /**
  * 文章封面图配置
@@ -30,7 +31,7 @@ export const coverImageConfig: CoverImageConfig = {
 			"https://uapis.cn/api/v1/random/image?category=acg&type=pc",
 		],
 		// 备用图片路径
-		fallback: "/assets/images/cover.webp",
+		fallback: siteAppearance.defaultPostCover,
 
 		/**
 		 * 加载指示器配置
