@@ -18,6 +18,14 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		LinkPreset.Archive,
 	];
 
+	// 扫雷游戏
+	links.push({
+		name: "扫雷",
+		url: "https://game.voqz.de",
+		external: true,
+		icon: "material-symbols:bomb-rounded",
+	});
+
 	// 自定义导航栏链接,并且支持多级菜单
 	links.push({
 		name: "链接",
