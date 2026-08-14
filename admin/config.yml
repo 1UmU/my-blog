@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: 1UmU/my-blog
+  branch: master
+
+site_url: https://blog.voqz.de
+display_url: https://blog.voqz.de
+logo_url: https://blog.voqz.de/assets/images/firefly.png
+publish_mode: simple
+
+output:
+  omit_empty_optional_fields: true
+
+slug:
+  encoding: unicode
+  clean_accents: false
+  sanitize_replacement: "-"
+
+media_folder: public/assets/images/posts
+public_folder: /assets/images/posts
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 5242880
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1920
+
+editor:
+  preview: false
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    icon: article
+    folder: src/content/posts
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}} · {{published}}"
+    sortable_fields: [published, updated, title]
+    view_filters:
+      - label: 草稿
+        field: draft
+        pattern: true
+      - label: 已发布
+        field: draft
+        pattern: false
+      - label: 置顶
+        field: pinned
+        pattern: true
+    fields:
+      - label: 标题
+        name: title
+        widget: string
+      - label: 发布日期
+        name: published
+        widget: datetime
+        type: date
+        format: YYYY-MM-DD
+        default: "{{now}}"
+      - label: 更新日期
+        name: updated
+        widget: datetime
+        type: date
+        format: YYYY-MM-DD
+        required: false
+      - label: 摘要
+        name: description
+        widget: text
+        required: false
+      - label: 封面
+        name: image
+        widget: image
+        choose_url: true
+        required: false
+        hint: 可上传图片，也可以填写 api 使用随机封面
+      - label: 标签
+        name: tags
+        widget: list
+        required: false
+        default: []
+      - label: 分类
+        name: category
+        widget: string
+        required: false
+      - label: 语言
+        name: lang
+        widget: select
+        required: false
+        options:
+          - { label: 简体中文, value: zh-CN }
+          - { label: 繁体中文, value: zh-TW }
+          - { label: English, value: en }
+          - { label: 日本語, value: ja }
+      - label: 草稿
+        name: draft
+        widget: boolean
+        default: false
+      - label: 置顶
+        name: pinned
+        widget: boolean
+        default: false
+        required: false
+      - label: 开启评论
+        name: comment
+        widget: boolean
+        default: true
+        required: false
+      - label: 作者
+        name: author
+        widget: string
+        required: false
+      - label: 原文链接
+        name: sourceLink
+        widget: string
+        required: false
+      - label: 许可名称
+        name: licenseName
+        widget: string
+        required: false
+      - label: 许可链接
+        name: licenseUrl
+        widget: string
+        required: false
+      - label: 正文
+        name: body
+        widget: markdown
+
+  - name: pages
+    label: 独立页面
+    icon: web
+    files:
+      - name: about
+        label: 关于
+        file: src/content/spec/about.md
+        fields:
+          - { label: 标题, name: title, widget: string }
+          - { label: 摘要, name: description, widget: text, required: false }
+          - { label: 封面, name: image, widget: image, required: false }
+          - { label: 正文, name: body, widget: markdown }
+      - name: friends
+        label: 友情链接
+        file: src/content/spec/friends.md
+        fields:
+          - { label: 标题, name: title, widget: string }
+          - { label: 摘要, name: description, widget: text, required: false }
+          - { label: 正文, name: body, widget: markdown }
+      - name: guestbook
+        label: 留言板
+        file: src/content/spec/guestbook.md
+        fields:
+          - { label: 标题, name: title, widget: string }
+          - { label: 摘要, name: description, widget: text, required: false }
+          - { label: 正文, name: body, widget: markdown }
