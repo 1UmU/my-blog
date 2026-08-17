@@ -2,9 +2,22 @@ name: Code quality
 
 on:
   push:
-    branches: [ master ] # Adjust branches as needed
+    branches: [master, develop]
+    paths:
+      - "src/**"
+      - ".github/workflows/biome.yml"
   pull_request:
-    branches: [ master ] # Adjust branches as needed
+    branches: [master]
+    paths:
+      - "src/**"
+      - ".github/workflows/biome.yml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   quality:
@@ -12,9 +25,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
       - name: Setup Biome
         uses: biomejs/setup-biome@f382a98e582959e6aaac8e5f8b17b31749018780 # v2.5.0
         with:
-          version: latest
-      - name: Run Biome
-        run: biome ci ./src --reporter=github
+          version: 2.3.11
+
+      - name: Check changed source files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          if [[ "$BASE_SHA" =~ ^0+$ ]]; then
+            BASE_SHA=$(git rev-list --max-parents=0 "$HEAD_SHA")
+          fi
+
+          changed_files=$(git diff --name-only --diff-filter=ACMR "$BASE_SHA" "$HEAD_SHA" -- src \
+            | grep -E '\.(astro|svelte|[cm]?[jt]s|json)$' || true)
+
+          if [[ -z "$changed_files" ]]; then
+            echo "No changed source files require a Biome check."
+            exit 0
+          fi
+
+          echo "$changed_files"
+          echo "$changed_files" | xargs biome ci --reporter=github
