@@ -4,6 +4,7 @@ backend:
   name: github
   repo: 1UmU/my-blog
   branch: master
+  base_url: https://sveltia-cms-auth.2715337042.workers.dev
 
 site_url: https://blog.voqz.de
 display_url: https://blog.voqz.de

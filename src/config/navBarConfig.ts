@@ -26,6 +26,14 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		icon: "material-symbols:bomb-rounded",
 	});
 
+	// 内容管理后台
+	links.push({
+		name: "管理",
+		url: "/admin/",
+		external: false,
+		icon: "material-symbols:admin-panel-settings",
+	});
+
 	// 自定义导航栏链接,并且支持多级菜单
 	links.push({
 		name: "链接",
