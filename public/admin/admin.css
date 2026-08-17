@@ -1,30 +1,45 @@
 :root {
   --admin-bar-height: 64px;
-  --admin-accent: #147d68;
-  --admin-accent-hover: #0f6958;
-  --admin-bar-background: #fbfcfb;
-  --admin-page-background: #f2f5f3;
-  --admin-border: #dce4e0;
-  --admin-text: #17201d;
-  --admin-muted: #68736f;
+  --admin-accent: #2f9d82;
+  --admin-accent-hover: #247d69;
+  --admin-bar-background: rgb(255 255 255 / 72%);
+  --admin-workspace-background: rgb(255 255 255 / 86%);
+  --admin-border: rgb(255 255 255 / 58%);
+  --admin-text: #1d2925;
+  --admin-muted: #65736e;
+  --admin-shadow: 0 18px 45px rgb(30 72 61 / 14%);
 
   --sui-base-hue: 165 !important;
-  --sui-font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Microsoft YaHei", "PingFang SC", sans-serif !important;
-  --sui-primary-accent-color: #147d68 !important;
-  --sui-primary-accent-color-dark: #0f6958 !important;
-  --sui-primary-accent-color-light: #e1f2ec !important;
-  --sui-primary-accent-color-translucent: rgb(20 125 104 / 14%) !important;
-  --sui-primary-accent-color-translucent-light: rgb(20 125 104 / 8%) !important;
+  --sui-font-family-default: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Microsoft YaHei", "PingFang SC", sans-serif !important;
+  --sui-primary-accent-color: #2f9d82 !important;
+  --sui-primary-accent-color-dark: #247d69 !important;
+  --sui-primary-accent-color-light: #8cd8c2 !important;
+  --sui-primary-accent-color-text: #267c69 !important;
+  --sui-primary-accent-color-translucent: rgb(47 157 130 / 22%) !important;
+  --sui-primary-accent-color-translucent-light: rgb(47 157 130 / 11%) !important;
   --sui-primary-accent-text-color: #ffffff !important;
+  --sui-content-background-color: rgb(255 255 255 / 86%) !important;
+  --sui-primary-background-color: rgb(249 252 251 / 90%) !important;
+  --sui-primary-background-color-translucent: rgb(249 252 251 / 78%) !important;
+  --sui-secondary-background-color: rgb(244 249 247 / 92%) !important;
+  --sui-secondary-background-color-translucent: rgb(244 249 247 / 82%) !important;
+  --sui-tertiary-background-color: rgb(238 246 243 / 94%) !important;
+  --sui-control-background-color: rgb(255 255 255 / 94%) !important;
+  --sui-dialog-content-background-color: rgb(250 253 252 / 94%) !important;
+  --sui-dialog-content-backdrop-filter: blur(18px) !important;
+  --sui-popup-shadow-color: rgb(30 72 61 / 18%) !important;
+  --sui-shadow-color: rgb(30 72 61 / 13%) !important;
   --sui-control-small-border-radius: 5px !important;
-  --sui-control-medium-border-radius: 6px !important;
-  --sui-control-large-border-radius: 6px !important;
+  --sui-control-medium-border-radius: 7px !important;
+  --sui-control-large-border-radius: 8px !important;
   --sui-button-small-border-radius: 5px !important;
-  --sui-button-medium-border-radius: 6px !important;
-  --sui-button-large-border-radius: 6px !important;
-  --sui-dialog-content-border-radius: 8px !important;
-  --sui-focus-ring-color: rgb(20 125 104 / 38%) !important;
+  --sui-button-medium-border-radius: 7px !important;
+  --sui-button-large-border-radius: 8px !important;
+  --sui-dialog-content-border-radius: 12px !important;
+  --sui-menu-border-radius: 8px !important;
+  --sui-listbox-border-radius: 8px !important;
+  --sui-focus-ring-color: rgb(47 157 130 / 38%) !important;
   --sui-focus-ring-width: 3px !important;
 }
 
@@ -34,15 +49,35 @@ body {
   height: 100%;
 }
 
+html {
+  background: #eef5f3;
+}
+
 body {
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
   margin: 0;
   min-width: 320px;
   overflow: hidden;
   color: var(--admin-text);
-  background: var(--admin-page-background);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei",
-    "PingFang SC", sans-serif;
+  background-color: #eef5f3;
+  background-image: url("/assets/images/d1.webp");
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Microsoft YaHei", "PingFang SC", sans-serif;
   letter-spacing: 0;
+}
+
+body::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background: rgb(239 247 244 / 76%);
+  content: "";
+  pointer-events: none;
 }
 
 .admin-bar {
@@ -51,24 +86,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  max-width: 1560px;
   height: var(--admin-bar-height);
-  padding: 0 24px;
-  border-bottom: 1px solid var(--admin-border);
+  margin: 0 auto;
+  padding: 0 22px;
+  border: 1px solid var(--admin-border);
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
   background: var(--admin-bar-background);
+  box-shadow: 0 4px 18px rgb(30 72 61 / 10%);
+  backdrop-filter: blur(18px);
 }
 
 .admin-brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   min-width: 0;
   color: inherit;
   text-decoration: none;
 }
 
 .admin-brand img {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   flex: 0 0 auto;
   object-fit: contain;
 }
@@ -89,7 +132,7 @@ body {
 
 .admin-brand-section {
   padding-left: 10px;
-  border-left: 1px solid var(--admin-border);
+  border-left: 1px solid rgb(29 41 37 / 13%);
   color: var(--admin-muted);
   font-size: 13px;
   font-weight: 600;
@@ -117,14 +160,15 @@ body {
   justify-content: center;
   min-height: 36px;
   padding: 0 13px;
-  border: 1px solid var(--admin-accent);
-  border-radius: 6px;
-  color: #ffffff;
-  background: var(--admin-accent);
+  border: 1px solid rgb(47 157 130 / 18%);
+  border-radius: 8px;
+  color: var(--admin-accent-hover);
+  background: rgb(230 246 240 / 90%);
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 160ms ease, border-color 160ms ease;
+  transition: background-color 160ms ease, border-color 160ms ease,
+    color 160ms ease;
 }
 
 .admin-site-link::after {
@@ -134,49 +178,109 @@ body {
 
 .admin-site-link:hover,
 .admin-site-link:focus-visible {
-  border-color: var(--admin-accent-hover);
-  background: var(--admin-accent-hover);
+  border-color: rgb(47 157 130 / 32%);
+  color: #1e6c5a;
+  background: rgb(211 239 230 / 96%);
 }
 
 .admin-site-link:focus-visible,
 .admin-brand:focus-visible {
-  outline: 3px solid rgb(20 125 104 / 30%);
+  outline: 3px solid rgb(47 157 130 / 30%);
   outline-offset: 3px;
 }
 
 #nc-root {
   position: relative;
-  width: 100%;
-  height: calc(100dvh - var(--admin-bar-height));
+  z-index: 1;
+  box-sizing: border-box;
+  width: calc(100% - 32px);
+  max-width: 1560px;
+  height: calc(100dvh - var(--admin-bar-height) - 28px);
   min-height: 360px;
+  margin: 12px auto 0;
   overflow: hidden;
+  border: 1px solid var(--admin-border);
+  border-radius: 16px;
+  background: var(--admin-workspace-background);
+  box-shadow: var(--admin-shadow);
+  backdrop-filter: blur(12px);
 }
 
 html[data-theme="dark"] {
-  --admin-accent: #3aaf91;
-  --admin-accent-hover: #4ec3a3;
-  --admin-bar-background: #171b19;
-  --admin-page-background: #111412;
-  --admin-border: #303733;
-  --admin-text: #f2f6f4;
-  --admin-muted: #a0aaa5;
+  --admin-accent: #74d5b9;
+  --admin-accent-hover: #91e2ca;
+  --admin-bar-background: rgb(22 27 26 / 74%);
+  --admin-workspace-background: rgb(18 24 22 / 88%);
+  --admin-border: rgb(255 255 255 / 11%);
+  --admin-text: #f3f7f5;
+  --admin-muted: #a9b7b2;
+  --admin-shadow: 0 20px 48px rgb(0 0 0 / 32%);
 
-  --sui-primary-accent-color: #3aaf91 !important;
-  --sui-primary-accent-color-dark: #2b987d !important;
-  --sui-primary-accent-color-light: #a5e4d2 !important;
-  --sui-primary-accent-color-translucent: rgb(58 175 145 / 20%) !important;
-  --sui-primary-accent-color-translucent-light: rgb(58 175 145 / 12%) !important;
+  --sui-primary-accent-color: #57c8aa !important;
+  --sui-primary-accent-color-dark: #42ad91 !important;
+  --sui-primary-accent-color-light: #91e2ca !important;
+  --sui-primary-accent-color-text: #91e2ca !important;
+  --sui-primary-accent-color-translucent: rgb(87 200 170 / 24%) !important;
+  --sui-primary-accent-color-translucent-light: rgb(87 200 170 / 13%) !important;
   --sui-primary-accent-text-color: #07130f !important;
-  --sui-focus-ring-color: rgb(58 175 145 / 45%) !important;
+  --sui-content-background-color: rgb(18 24 22 / 88%) !important;
+  --sui-primary-background-color: rgb(23 30 28 / 92%) !important;
+  --sui-primary-background-color-translucent: rgb(23 30 28 / 82%) !important;
+  --sui-secondary-background-color: rgb(29 37 34 / 94%) !important;
+  --sui-secondary-background-color-translucent: rgb(29 37 34 / 84%) !important;
+  --sui-tertiary-background-color: rgb(36 46 42 / 96%) !important;
+  --sui-control-background-color: rgb(38 48 44 / 96%) !important;
+  --sui-dialog-content-background-color: rgb(25 32 30 / 95%) !important;
+  --sui-popup-shadow-color: rgb(0 0 0 / 42%) !important;
+  --sui-shadow-color: rgb(0 0 0 / 32%) !important;
+  --sui-focus-ring-color: rgb(87 200 170 / 45%) !important;
 }
 
-@media (max-width: 640px) {
+html[data-theme="dark"] body {
+  background-color: #111715;
+}
+
+html[data-theme="dark"] body::before {
+  background: rgb(8 14 12 / 72%);
+}
+
+html[data-theme="dark"] .admin-brand-section {
+  border-left-color: rgb(255 255 255 / 14%);
+}
+
+html[data-theme="dark"] .admin-site-link {
+  border-color: rgb(116 213 185 / 18%);
+  color: #b2ecd9;
+  background: rgb(49 91 78 / 72%);
+}
+
+html[data-theme="dark"] .admin-site-link:hover,
+html[data-theme="dark"] .admin-site-link:focus-visible {
+  border-color: rgb(116 213 185 / 32%);
+  color: #d1f6e9;
+  background: rgb(57 112 94 / 82%);
+}
+
+@media (max-width: 720px) {
   :root {
     --admin-bar-height: 56px;
   }
 
+  body {
+    background-image: url("/assets/images/m1.webp");
+    background-position: center top;
+  }
+
+  body::before {
+    background: rgb(244 249 248 / 84%);
+  }
+
   .admin-bar {
+    width: 100%;
     padding: 0 12px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0 0 10px 10px;
   }
 
   .admin-brand {
@@ -201,6 +305,20 @@ html[data-theme="dark"] {
     min-height: 34px;
     padding: 0 10px;
     font-size: 12px;
+  }
+
+  #nc-root {
+    width: 100%;
+    height: calc(100dvh - var(--admin-bar-height));
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  html[data-theme="dark"] body::before {
+    background: rgb(8 14 12 / 78%);
   }
 }
 
