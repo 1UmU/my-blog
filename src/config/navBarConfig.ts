@@ -18,12 +18,12 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 		LinkPreset.Archive,
 	];
 
-	// 扫雷游戏
+	// 游戏中心
 	links.push({
-		name: "扫雷",
-		url: "https://game.voqz.de",
-		external: true,
-		icon: "material-symbols:bomb-rounded",
+		name: "游戏中心",
+		url: "/games/",
+		external: false,
+		icon: "material-symbols:sports-esports",
 	});
 
 	// 内容管理后台

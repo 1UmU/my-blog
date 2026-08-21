@@ -11,6 +11,7 @@ UmU 的个人博客，用于记录技术笔记、项目折腾过程和生活随�
 
 - 博客首页：<https://blog.voqz.de>
 - 内容后台：<https://blog.voqz.de/admin/>
+- 游戏中心：<https://blog.voqz.de/games/>
 - 扫雷游戏：<https://game.voqz.de>
 - GitHub 仓库：<https://github.com/1UmU/my-blog>
 
@@ -24,7 +25,7 @@ UmU 的个人博客，用于记录技术笔记、项目折腾过程和生活随�
 - 使用 GitHub OAuth 登录后台，无需手动填写 Personal Access Token
 - 后台支持文章、图片、站点外观、独立页面和音乐歌单管理
 - GitHub 提交后由 Cloudflare Pages 自动构建和发布
-- 博客导航中集成扫雷游戏与管理后台入口
+- 博客导航中集成游戏中心与管理后台入口
 
 ## 发布流程
 
